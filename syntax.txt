@@ -52,7 +52,9 @@ git hub related:
 git status
 git add
 git commit -m"commitMsg"
-git push (-f) force
+git push 
+	(-f) force
+	--set-upstream origin main
 git rm
 git clone
 git checkout
