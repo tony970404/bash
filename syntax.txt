@@ -1,0 +1,58 @@
+cd - change directory
+	../ - one up (../../ - two up)
+	~/ - back home
+ls - list
+	ls | wc -l count file
+pwd - Print work directory
+	flags:
+	-s summary
+	-l long
+	-a all
+	-h human readable
+mkdir - make directory
+man - manual
+touch [someFile] - create a new file
+nano [someFile]- edit file
+cat - concatenate: display and merge file
+	cat [someFile]
+	cat [file1] [file2] > [file3]
+related to cat: head, tail
+	head -[#] [file]
+rm - remove
+mv - move
+!} cp - copy
+
+WildCards:
+* -  anything that matches the rest
+
+grep - like search
+	flags:
+	-i ignor case
+	-w exact match
+awk - filtering lines in excel
+syntax: awk -options 'selection _criteria {action }' input-file > output-file
+example: awk -F $'\t' '{if ($6 == "POLR2A") print $0;}' encode_awk_lessons.tsv | wc -l 
+also: awk 'BEGIN {FS="\t"}; {print $6}' encode_awk_lessons.tsv > DBP.txt
+	flags:
+	-F or BEGIN {FS="\t"}  field separator
+	$ set variable
+	'\t' tab separated file
+sort
+	-u unique
+
+for loops:
+syntax: For x (in) ; do ; done
+
+sed: find and replace
+
+.tsv "/" tab deliminated, .csv "," deliminated
+
+===========================================================
+git hub related:
+git status
+git add
+git commit -m"commitMsg"
+git push (-f) force
+git rm
+git clone
+git checkout
